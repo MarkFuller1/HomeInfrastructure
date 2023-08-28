@@ -19,8 +19,7 @@ public class WaterHeaterService {
         log.info("running");
     }
 
-//    @Scheduled(cron = "0 0 6 ? * * ")
-    @Scheduled(cron = "* * * * * *")
+    @Scheduled(cron = "0 0 6 ? * * ")
     public void runWaterHeater() {
 
         log.info("running water heater");
